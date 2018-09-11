@@ -6,6 +6,8 @@ from time import sleep
 import time
 import pygame
 
+#Dit is een verandering gemaakt door Harm!
+
 deurbel = SenseHat()
 camera = PiCamera()
 # -----waarden

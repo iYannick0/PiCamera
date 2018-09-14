@@ -1,12 +1,12 @@
 # ----setup
-#from picamera import PiCamera
+from picamera import PiCamera
 from sense_hat import SenseHat
 from time import sleep
 import time
 import pygame
 
 deurbel = SenseHat()
-#camera = PiCamera()
+camera = PiCamera()
 # -----waarden
 # opslag
 music_bel = "./music/bell.mp3" # musiek bestand bel toon
@@ -126,9 +126,9 @@ def foto():
     sleep(0.4)
     geluid_click()
     # --- foto maken
-    #camera.start_preview()
-    #camera.capture(locatie+'/image_' + time.strftime("%Y-%m-%d_%H-%M-%S") + '.jpg')
-    #camera.stop_preview()
+    camera.start_preview()
+    camera.capture(locatie+'/image_' + time.strftime("%Y-%m-%d_%H-%M-%S") + '.jpg')
+    camera.stop_preview()
 
 def animatie(keer):
     q=0

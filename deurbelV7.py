@@ -9,9 +9,9 @@ deurbel = SenseHat()
 camera = PiCamera()
 # -----waarden
 # opslag
-music_bel = "bell.mp3" # musiek bestand bel toon
-music_click = "camera_click.mp3" # musiek bestand click
-locatie = '.' # map fotos
+music_bel = "./music/bell.mp3" # musiek bestand bel toon
+music_click = "./music/camera_click.mp3" # musiek bestand click
+locatie = '/home/pi/Desktop/Deurbel' # map fotos
 vertraging = 20000 # snelheid knop animatie
 
 # kleuren
